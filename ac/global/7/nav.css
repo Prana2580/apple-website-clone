@@ -1,0 +1,281 @@
+body {
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+button,
+input {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+.visuallyhidden {
+  display: none;
+}
+
+.transparent-global {
+  background: transparent;
+  border: none;
+}
+
+.global-btn {
+  cursor: pointer;
+}
+
+.nav-button {
+  color: #fafafa;
+}
+
+.global-app-nav {
+  background-color: #1d1d1f;
+  height: 50px;
+}
+
+.nav-app {
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+
+.apple-nav {
+  color: #fafafa;
+  position: sticky;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.list-item {
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  color: #e2e2e2;
+  font-size: 12px;
+  font-weight: inherit;
+  font-smooth: inherit;
+  letter-spacing: inherit;
+}
+
+.global-item-nav {
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: #fff;
+  font-size: 12px;
+  animation: all 0.8s ease-in-out;
+}
+
+.unit-link {
+  text-decoration: none;
+}
+
+.icon-apple {
+  font-size: 0.9em;
+}
+
+.main {
+  margin-top: 3.5%;
+}
+
+.mobile-global {
+  display: none;
+}
+
+.m-search-global,
+.search-bar {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mobile-view-menu,
+  .global-mobile-content {
+    opacity: 0;
+  }
+
+  .m-search-global,
+  .search-bar {
+    display: flex;
+    place-content: center;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    background-color: #323233;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  .button-close-bag {
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    cursor: pointer;
+    margin-top: -30px;
+    color: #06c;
+    font-weight: 600;
+  }
+
+  .search-input,
+  .input-global {
+    background-color: transparent;
+    border: none;
+    flex: 1;
+  }
+
+  .search-input:focus {
+    outline: none;
+  }
+  .list-item,
+  .nav-list {
+    display: block;
+  }
+  .bag-container {
+    background-color: #fff;
+    width: 30%;
+    height: 100px;
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+    color: #1d1d1f;
+    letter-spacing: inherit;
+    place-content: center;
+    text-align: center;
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 2px 2px #fafafa;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+
+  .bag-user {
+    position: absolute;
+    right: 10px;
+    margin-top: 20px;
+  }
+
+  .indiactor {
+    padding: 5px;
+    /* border: 1px solid; */
+    transform: rotate(45deg);
+    position: absolute;
+    top: -7px;
+    right: 10px;
+    background-color: #fafafa;
+    box-shadow: 0px 1px 1px 1px #fafafa;
+    z-index: -1;
+  }
+  .mobile-global {
+    display: block;
+  }
+
+  .list-item {
+    list-style: none;
+    gap: 30px;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+  }
+
+  .nav-list {
+    overflow-y: scroll;
+  }
+
+  .nav-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-list li {
+    border-bottom: 1px solid #fafafa;
+    width: 80%;
+    padding-bottom: 3px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .global-app-nav {
+    background-color: #1d1d1f;
+    height: 50px;
+    transition: 0.5s;
+  }
+
+  .global-item-nav {
+    display: none;
+  }
+
+  .nav-app {
+    display: block;
+    align-items: center;
+    place-content: center;
+  }
+
+  .apple-nav {
+    color: #fafafa;
+    position: sticky;
+    width: 100%;
+    top: 0;
+  }
+
+  .menu-nav-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  .cross-btn, .global-cross, .menu-close-btn{
+    color: #06c;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: -30px;
+    position: absolute;
+    margin-left: 20px;
+    transition: 0.8s;
+  }
+
+  .span-menu,
+  .btn-style,
+  .bag-icon-nav,
+  .apple-icon-nav {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: auto;
+    cursor: pointer;
+  }
+
+  .bag-icon-nav {
+    margin-right: 20px;
+  }
+
+  .mobile-icon {
+    font-size: 20px;
+    color: #e6e4e4;
+  }
+
+  .menu-bar {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+  }
+}
